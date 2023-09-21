@@ -1,0 +1,11 @@
+{
+  "name": "ninacarducci.github.io",
+  "version": "1.0.0",
+  "description": "Site web personnel de Nina Carducci",
+  "main": "",
+  "author": "Nina Carducci",
+  "license": "ISC",
+  "dependencies": {
+    "css-minify": "^2.0.0"
+  }
+}
