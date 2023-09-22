@@ -6,6 +6,8 @@
   "author": "Nina Carducci",
   "license": "ISC",
   "dependencies": {
-    "css-minify": "^2.0.0"
+    "css-minify": "^2.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0"
   }
 }
