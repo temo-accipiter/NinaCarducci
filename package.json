@@ -7,7 +7,8 @@
   "license": "ISC",
   "dependencies": {
     "css-minify": "^2.0.0",
-    "imagemin": "^8.0.1",
-    "imagemin-webp": "^8.0.0"
+    "glob": "^10.3.6",
+    "imagemin-webp": "^8.0.0",
+    "sharp": "^0.32.6"
   }
 }
