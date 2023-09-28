@@ -6,9 +6,12 @@
   "author": "Nina Carducci",
   "license": "ISC",
   "dependencies": {
-    "css-minify": "^2.0.0",
     "glob": "^10.3.6",
-    "imagemin-webp": "^8.0.0",
+    "gulp-uglify": "^3.0.2",
     "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0"
   }
 }
