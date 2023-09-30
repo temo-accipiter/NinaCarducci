@@ -1,311 +1,446 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!-- Pour la gestion de la vue mobile, en utilisant la largeur de l'appareil comme point de départ et en évitant tout zoom initial -->
-	<meta name="description" content="description"><!-- ! content a changer-->
-	<title>nina carducci</title>
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/dist/css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">	<!-- Encodage des caractères -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-	<script src="./assets/dist/js/maugallery.js" defer></script>
-	<script src="./assets/dist/js/scripts.js" defer></script>
-</head>
-<body>
-		<!-- Header: titre et bar de navigation -->
-<div class="top-header"><!-- ! modifier balise div en header -->
-	<h1 class="name">Nina Carducci</h1>
-	<div class="nav"><!-- ! modifier balise div en nav -->
-		<ul>
-			<li><a href="#about">À propos</a></li><!-- ! =14px -->
-			<li><a href="#gallery">Galerie</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" aria-label="Page Instagram de Nina Carducci Photo"><img src="assets/optimisedimages/logo/instagram_40.webp" width="40" height="40" alt=""></a></li>
-		</ul>
-	</div>
-</div>
-	<!-- Carrousel -->
-<div id="header">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Pour la gestion de la vue mobile, en utilisant la largeur de l'appareil comme point de départ et en évitant tout zoom initial -->
+    <meta
+      name="description"
+      content="Photographe professionnelle à Bordeaux, spécialisée dans les moments précieux."
+    />
 
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img
-					srcset="assets/optimisedimages/slider/edward-cisneros-3_h6-1NPDGw-unsplash_320.webp 320w,
-						assets/optimisedimages/slider/edward-cisneros-3_h6-1NPDGw-unsplash_576.webp 576w,
-						assets/optimisedimages/slider/edward-cisneros-3_h6-1NPDGw-unsplash_768.webp 768w,
-						assets/optimisedimages/slider/edward-cisneros-3_h6-1NPDGw-unsplash_1330.webp 1330w,
-						assets/optimisedimages/slider/edward-cisneros-3_h6-1NPDGw-unsplash_1920.webp 1920w"
-					src="assets/optimisedimages/slider/edward-cisneros-3_h6-1NPDGw-unsplash_1920.webp"
-					alt="Description de l'image"
- 					class="d-block w-100"
-					width="1920" height="887"
-				>
-			</div>
-			<div class="carousel-item">
-				<img
-					srcset="assets/optimisedimages/slider/nicholas-green-nPz8akkUmDI-unsplash_320.webp 320w,
-						assets/optimisedimages/slider/nicholas-green-nPz8akkUmDI-unsplash_576.webp 576w,
-						assets/optimisedimages/slider/nicholas-green-nPz8akkUmDI-unsplash_768.webp 768w,
-						assets/optimisedimages/slider/nicholas-green-nPz8akkUmDI-unsplash_1330.webp 1330w,
-						assets/optimisedimages/slider/nicholas-green-nPz8akkUmDI-unsplash_1920.webp 1920w"
-					src="assets/optimisedimages/slider/nicholas-green-nPz8akkUmDI-unsplash_1920.webp"
-					alt="Description de l'image"
-					class="d-block w-100"
-				>
-			</div>
-			<div class="carousel-item">
-				<img
-					srcset="assets/optimisedimages/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_320.webp 320w,
-						assets/optimisedimages/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_576.webp 576w,
-						assets/optimisedimages/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_768.webp 768w,
-						assets/optimisedimages/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1330.webp 1330w,
-						assets/optimisedimages/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1920.webp 1920w"
-					src="assets/optimisedimages/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1920.webp"
-					alt="Description de l'image"
-					class="d-block w-100"
-				>
-			</div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
-</div>
-	<!-- Section à propos -->
-<div id="about">
-	<div class="picture left">
-		<img
-			srcset="assets/optimisedimages/nina/nina_240.webp 240w,
-				assets/optimisedimages/nina/nina_320.webp 320w,
-				assets/optimisedimages/nina/nina_440.webp 440w,
-				assets/optimisedimages/nina/nina_560.webp 560w"
-			src="assets/optimisedimages/nina_560.webp"
-			alt="Description de l'image"
-			width="560" height="558"
-			loading="lazy"
-	  	/>
-	</div>
-	<div id="about-me">
-		<h2 class="about-me__title">A propos de moi</h2>
-		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-	</div>
-</div>
-	<!-- Section Portfolio -->
-<div id="gallery">
-	<h3 class="title">Portfolio</h3>
-	<div class="container py-3"><!-- ! ou est nav ? -->
-		<div class="gallery" style="display: none"><!-- ! =16px -->
-			<img
-				data-gallery-tag="Concert"
-				class="gallery-item"
-				srcset="assets/optimisedimages/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_240.webp 240w,
-					assets/optimisedimages/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_270.webp 270w,
-					assets/optimisedimages/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_440.webp 440w,
-					assets/optimisedimages/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_575.webp 575w"
-				sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
-				src="assets/optimisedimages/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_575.webp"
-				alt="Description de l'image"
-				loading="lazy"
-			>
-			<img
-				data-gallery-tag="Entreprises"
-				class="gallery-item"
-				srcset="assets/optimisedimages/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_240.webp 240w,
-					assets/optimisedimages/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_270.webp 270w,
-					assets/optimisedimages/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_440.webp 440w,
-					assets/optimisedimages/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_575.webp 575w"
-				sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
-				src="assets/optimisedimages/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_575.webp"
-				alt="Description de l'image"
-				loading="lazy"
-			>
-			<img
-				data-gallery-tag="Entreprises"
-				class="gallery-item"
-				srcset="assets/optimisedimages/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_240.webp 240w,
-					assets/optimisedimages/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_270.webp 270w,
-					assets/optimisedimages/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_440.webp 440w,
-					assets/optimisedimages/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_575.webp 575w"
-				sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
-				src="assets/optimisedimages/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_575.webp"
-				alt="Description de l'image"
-				loading="lazy"
-			>
-			<img
-				data-gallery-tag="Mariages"
-				class="gallery-item"
-				srcset="assets/optimisedimages/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_240.webp 240w,
-					assets/optimisedimages/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_270.webp 270w,
-					assets/optimisedimages/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_440.webp 440w,
-					assets/optimisedimages/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_575.webp 575w"
-				sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
-				src="assets/optimisedimages/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_575.webp"
-				alt="Description de l'image"
-				loading="lazy"
-			>
-			<img
-				data-gallery-tag="Portrait"
-				class="gallery-item"
-				srcset="assets/optimisedimages/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_240.webp 240w,
-					assets/optimisedimages/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_270.webp 270w,
-					assets/optimisedimages/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_440.webp 440w,
-					assets/optimisedimages/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_575.webp 575w"
-				sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
-				src="assets/optimisedimages/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_575.webp"
-				alt="Description de l'image"
-				loading="lazy"
-			>
-			<img
-				data-gallery-tag="Mariages"
-				class="gallery-item"
-				srcset="assets/optimisedimages/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_240.webp 240w,
-					assets/optimisedimages/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_270.webp 270w,
-					assets/optimisedimages/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_440.webp 440w,
-					assets/optimisedimages/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_575.webp 575w"
-				sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
-				src="assets/optimisedimages/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_575.webp"
-				alt="Description de l'image"
-				loading="lazy"
-			>
-			<img
-				data-gallery-tag="Portrait"
-				class="gallery-item"
-				srcset="assets/optimisedimages/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_240.webp 240w,
-					assets/optimisedimages/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_270.webp 270w,
-					assets/optimisedimages/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_440.webp 440w,
-					assets/optimisedimages/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_575.webp 575w"
-				sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
-				src="assets/optimisedimages/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_575.webp"
-				alt="Description de l'image"
-				loading="lazy"
-			>
-			<img
-				data-gallery-tag="Concert"
-				class="gallery-item"
-				srcset="assets/optimisedimages/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_240.webp 240w,
-					assets/optimisedimages/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_270.webp 270w,
-					assets/optimisedimages/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_440.webp 440w,
-					assets/optimisedimages/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_575.webp 575w"
-				sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
-				src="assets/optimisedimages/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_575.webp"
-				alt="Description de l'image"
-				loading="lazy"
-			>
-			<img
-				data-gallery-tag="Entreprises"
-				class="gallery-item"
-				srcset="assets/optimisedimages/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_240.webp 240w,
-					assets/optimisedimages/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_270.webp 270w,
-					assets/optimisedimages/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_440.webp 440w,
-					assets/optimisedimages/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_575.webp 575w"
-				sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
-				src="assets/optimisedimages/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_575.webp"
-				alt="Description de l'image"
-				loading="lazy"
-			>
-		</div>
-	</div>
-	<div class="quote"><!-- ! sortir apart -->
-		<figure>
-			<blockquote>
-				<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
-			</blockquote>
-			<figcaption class="quote__author">- Richard Avedon</figcaption><!-- ! =22px -->
-		</figure>
-	</div>
-</div>
-	<!-- Section Services -->
-<div id="services">
-	<h3 class="title">Mes services</h3>
-	<div class="container">
-		<div class="service">
-			<div class="service__description">
-				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
-			</div>
-			<div class="service__price">
-				<h4>350€/demi journée</h4>
-				<span>Matériel, déplacement inclus</span><!-- ! =16px -->
-			</div>
-
-		</div>
-		<div class="service">
-			<div class="service__description">
-				<h3>Retouches</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
-			</div>
-			<div class="service__price">
-				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
-			</div>
-		</div>
-		<div class="service">
-			<div class="service__description">
-				<h3>Album photos</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-			</div>
-			<div class="service__price">
-				<h4>400€ album A4</h4>
-				<span>30 pages recto/verso</span>
-			</div>
-		</div>
-	</div>
-</div>
-	<!-- Section Quote -->
-<div class="quote">
-	<figure>
-		<blockquote>
-			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
-		</blockquote>
-		<figcaption class="quote__author">- Richard Avedon</figcaption>
-	</figure>
-</div>
-	<!-- Section Contact -->
-<div id="contact">
-	<div class="container">
-		<div class="form-container">
-			<h2>Une question ? Une demande de devis ?</h2>
-			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			<form action="" method="post">
-				<label for="nom">Nom</label>
-				<input type="text" name="nom" id="nom">
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email">
-				<label for="message">Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
-			</form>
-		</div>
-		<div class="picture right">
-			<img
-				srcset="assets/optimisedimages/camera/camera_240.webp 240w,
-					assets/optimisedimages/camera/camera_320.webp 320w,
-					assets/optimisedimages/camera/camera_419.webp 419w"
-				src="assets/optimisedimages/camera_419.webp"
-				alt="Description de l'image"
-				width="419" height="418"
-				loading="lazy"
-			>
-		</div>
-	</div>
-</div>
-</body>
+    <title>Nina Carducci - Photographe</title>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Encodage des caractères -->
+    <meta charset="UTF-8" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script src="./assets/dist/js/maugallery.js" defer></script>
+    <script src="./assets/dist/js/scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- Header: titre et bar de navigation -->
+    <header class="top-header">
+      <h1 class="name">Nina Carducci</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              target="_blank"
+              aria-label="Page Instagram de Nina Carducci Photo"
+              ><img
+                src="assets/optimisedimages/logo/instagram-logo_40.webp"
+                width="40"
+                height="40"
+                alt="instagram logo"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Carrousel -->
+    <article id="header">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <section class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </section>
+        <section class="carousel-inner">
+          <article class="carousel-item active">
+            <img
+              srcset="
+                assets/optimisedimages/slider/bordeaux-wedding-photography_320.webp   320w,
+                assets/optimisedimages/slider/bordeaux-wedding-photography_576.webp   576w,
+                assets/optimisedimages/slider/bordeaux-wedding-photography_768.webp   768w,
+                assets/optimisedimages/slider/bordeaux-wedding-photography_1330.webp 1330w,
+                assets/optimisedimages/slider/bordeaux-wedding-photography_1920.webp 1920w
+              "
+              src="assets/optimisedimages/slider/bordeaux-wedding-photography_1920.webp"
+              alt="wedding photography"
+              class="d-block w-100"
+              width="1920"
+              height="887"
+            />
+          </article>
+          <article class="carousel-item">
+            <img
+              srcset="
+                assets/optimisedimages/slider/live-concert-paris_320.webp   320w,
+                assets/optimisedimages/slider/live-concert-paris_576.webp   576w,
+                assets/optimisedimages/slider/live-concert-paris_768.webp   768w,
+                assets/optimisedimages/slider/live-concert-paris_1330.webp 1330w,
+                assets/optimisedimages/slider/live-concert-paris_1920.webp 1920w
+              "
+              src="assets/optimisedimages/slider/live-concert-paris_1920.webp"
+              alt="live concert"
+              class="d-block w-100"
+            />
+          </article>
+          <article class="carousel-item">
+            <img
+              srcset="
+                assets/optimisedimages/slider/japan-street-photography_320.webp   320w,
+                assets/optimisedimages/slider/japan-street-photography_576.webp   576w,
+                assets/optimisedimages/slider/japan-street-photography_768.webp   768w,
+                assets/optimisedimages/slider/japan-street-photography_1330.webp 1330w,
+                assets/optimisedimages/slider/japan-street-photography_1920.webp 1920w
+              "
+              src="assets/optimisedimages/slider/japan-street-photography_1920.webp"
+              alt="Man walking on pedestrian crossing - street photography"
+              class="d-block w-100"
+            />
+          </article>
+        </section>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </article>
+    <!-- Section à propos -->
+    <article id="about">
+      <section class="picture left">
+        <img
+          srcset="
+            assets/optimisedimages/nina/nina-carducci-portraits-photo_240.webp 240w,
+            assets/optimisedimages/nina/nina-carducci-portraits-photo_320.webp 320w,
+            assets/optimisedimages/nina/nina-carducci-portraits-photo_440.webp 440w,
+            assets/optimisedimages/nina/nina-carducci-portraits-photo_560.webp 560w
+          "
+          src="assets/optimisedimages/nina-carducci-portraits-photo_560.webp"
+          alt="portraits photo - Nina Carducci"
+          width="560"
+          height="558"
+          loading="lazy"
+        />
+      </section>
+      <section id="about-me">
+        <h2 class="about-me__title">A propos de moi</h2>
+        <p class="about-me__introduction">
+          Devenir photographe était pour moi une évidence. Comme si j’y étais
+          prédestiné. Saisir un moment, une émotion, une situation, un endroit,
+          une lumière et les rendre immortels, voilà ce qui me fait vibrer.
+        </p>
+        <p>
+          Nous passons notre vie à chercher le bonheur, et lorsque nous y
+          touchons, nous n’avons qu’une envie : le figer au travers de
+          photographies pour le savourer avec les personnes qui sont importantes
+          à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
+          propose : saisir ces merveilleux moments au travers de mon regard, mon
+          approche, ma technique. Rendre ces moments immortels, afin que vous
+          puissiez y puiser de l’amour, du bonheur, de la tendresse et de
+          lumière à chaque fois que vous poserez les yeux sur vos photos.
+        </p>
+        <p>
+          En tant que <strong>photographe passionné</strong>, ma mission est de
+          vous offrir une expérience de
+          <strong>séance photo professionnelle</strong> inoubliable. Vous
+          recherchez un <strong>photographe mariage à Bordeaux</strong> ? Mon
+          expertise et ma passion pour la photographie sont à votre service.
+          N'hésitez pas à explorer ma <strong>galerie photos</strong> pour
+          découvrir mon travail et à me contacter pour réserver votre
+          <strong>séance photo</strong> ou discuter de votre projet.
+        </p>
+      </section>
+    </article>
+    <!-- Section Portfolio -->
+    <article id="gallery">
+      <h3 class="title">Portfolio</h3>
+      <div class="container py-3">
+        <section class="gallery" style="display: none">
+          <img
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            srcset="
+              assets/optimisedimages/gallery/concerts/live-concert-toronto_240.webp 240w,
+              assets/optimisedimages/gallery/concerts/live-concert-toronto_270.webp 270w,
+              assets/optimisedimages/gallery/concerts/live-concert-toronto_440.webp 440w,
+              assets/optimisedimages/gallery/concerts/live-concert-toronto_575.webp 575w
+            "
+            sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
+            src="assets/optimisedimages/gallery/concerts/live-concert-toronto_575.webp"
+            alt="Music fans raise their hands in the air as red spotlights illuminate a crowded music hall while live concert"
+            loading="lazy"
+          />
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            srcset="
+              assets/optimisedimages/gallery/entreprise/portraits-photo-young-man_240.webp 240w,
+              assets/optimisedimages/gallery/entreprise/portraits-photo-young-man_270.webp 270w,
+              assets/optimisedimages/gallery/entreprise/portraits-photo-young-man_440.webp 440w,
+              assets/optimisedimages/gallery/entreprise/portraits-photo-young-man_575.webp 575w
+            "
+            sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
+            src="assets/optimisedimages/gallery/entreprise/portraits-photo-young-man_575.webp"
+            alt="Man wearing a black jacket - portraits photo"
+            loading="lazy"
+          />
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            srcset="
+              assets/optimisedimages/gallery/entreprise/office-team-shooting-photo_240.webp 240w,
+              assets/optimisedimages/gallery/entreprise/office-team-shooting-photo_270.webp 270w,
+              assets/optimisedimages/gallery/entreprise/office-team-shooting-photo_440.webp 440w,
+              assets/optimisedimages/gallery/entreprise/office-team-shooting-photo_575.webp 575w
+            "
+            sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
+            src="assets/optimisedimages/gallery/entreprise/office-team-shooting-photo_575.webp"
+            alt="shooting photo - office"
+            loading="lazy"
+          />
+          <img
+            data-gallery-tag="Mariages"
+            class="gallery-item"
+            srcset="
+              assets/optimisedimages/gallery/mariage/wedding-photography-paris_240.webp 240w,
+              assets/optimisedimages/gallery/mariage/wedding-photography-paris_270.webp 270w,
+              assets/optimisedimages/gallery/mariage/wedding-photography-paris_440.webp 440w,
+              assets/optimisedimages/gallery/mariage/wedding-photography-paris_575.webp 575w
+            "
+            sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
+            src="assets/optimisedimages/gallery/mariage/wedding-photography-paris_575.webp"
+            alt="hands - wedding photography"
+            loading="lazy"
+          />
+          <img
+            data-gallery-tag="Portrait"
+            class="gallery-item"
+            srcset="
+              assets/optimisedimages/gallery/portraits/portraits-photo_240.webp 240w,
+              assets/optimisedimages/gallery/portraits/portraits-photo_270.webp 270w,
+              assets/optimisedimages/gallery/portraits/portraits-photo_440.webp 440w,
+              assets/optimisedimages/gallery/portraits/portraits-photo_575.webp 575w
+            "
+            sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
+            src="assets/optimisedimages/gallery/portraits/portraits-photo_575.webp"
+            alt="eyes closed - portraits photo"
+            loading="lazy"
+          />
+          <img
+            data-gallery-tag="Mariages"
+            class="gallery-item"
+            srcset="
+              assets/optimisedimages/gallery/mariage/wedding-photography_240.webp 240w,
+              assets/optimisedimages/gallery/mariage/wedding-photography_270.webp 270w,
+              assets/optimisedimages/gallery/mariage/wedding-photography_440.webp 440w,
+              assets/optimisedimages/gallery/mariage/wedding-photography_575.webp 575w
+            "
+            sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
+            src="assets/optimisedimages/gallery/mariage/wedding-photography_575.webp"
+            alt="wedding photography - couple walks hand in hand"
+            loading="lazy"
+          />
+          <img
+            data-gallery-tag="Portrait"
+            class="gallery-item"
+            srcset="
+              assets/optimisedimages/gallery/portraits/portraits-photo-young-woman_240.webp 240w,
+              assets/optimisedimages/gallery/portraits/portraits-photo-young-woman_270.webp 270w,
+              assets/optimisedimages/gallery/portraits/portraits-photo-young-woman_440.webp 440w,
+              assets/optimisedimages/gallery/portraits/portraits-photo-young-woman_575.webp 575w
+            "
+            sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
+            src="assets/optimisedimages/gallery/portraits/portraits-photo-young-woman_575.webp"
+            alt="A woman wearing glasses - portraits photo"
+            loading="lazy"
+          />
+          <img
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            srcset="
+              assets/optimisedimages/gallery/concerts/live-concert-bordeaux_240.webp 240w,
+              assets/optimisedimages/gallery/concerts/live-concert-bordeaux_270.webp 270w,
+              assets/optimisedimages/gallery/concerts/live-concert-bordeaux_440.webp 440w,
+              assets/optimisedimages/gallery/concerts/live-concert-bordeaux_575.webp 575w
+            "
+            sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
+            src="assets/optimisedimages/gallery/concerts/live-concert-bordeaux_575.webp"
+            alt="A musician on stage with white and red lights - live concert"
+            loading="lazy"
+          />
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            srcset="
+              assets/optimisedimages/gallery/entreprise/office-portraits-photo_240.webp 240w,
+              assets/optimisedimages/gallery/entreprise/office-portraits-photo_270.webp 270w,
+              assets/optimisedimages/gallery/entreprise/office-portraits-photo_440.webp 440w,
+              assets/optimisedimages/gallery/entreprise/office-portraits-photo_575.webp 575w
+            "
+            sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
+            src="assets/optimisedimages/gallery/entreprise/office-portraits-photo_575.webp"
+            alt="office - shooting photo"
+            loading="lazy"
+          />
+        </section>
+      </div>
+    </article>
+    <!-- Section Quote -->
+    <article class="quote">
+      <figure>
+        <blockquote>
+          <p class="quote__text">
+            Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+            qu’un fait est traduit en photo, il cesse d’être un fait pour
+            devenir une opinion. L’inexactitude n’existe pas en photographie.
+            Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+          </p>
+        </blockquote>
+        <figcaption class="quote__author">- Richard Avedon</figcaption>
+      </figure>
+    </article>
+    <!-- Section Services -->
+    <article id="services">
+      <h3 class="title">Mes services</h3>
+      <section class="container">
+        <article class="service">
+          <div class="service__description">
+            <h3>Shooting photo</h3>
+            <p>
+              Pour capturer vos moments les plus précieux et garder un souvenir
+              impérissable. Je me déplace en Île-de-France pour réaliser vos
+              photos
+            </p>
+          </div>
+          <div class="service__price">
+            <h4>350€/demi journée</h4>
+            <span>Matériel, déplacement inclus</span>
+          </div>
+        </article>
+        <article class="service">
+          <div class="service__description">
+            <h3>Retouches</h3>
+            <p>
+              Vous souhaitez retoucher vos photos pour un résultat professionnel
+              ? Bénéficier d’un rendu optimal pour vos publications
+            </p>
+          </div>
+          <div class="service__price">
+            <h4>50€/photo</h4>
+            <span>2 AR par photo</span>
+          </div>
+        </article>
+        <article class="service">
+          <div class="service__description">
+            <h3>Album photos</h3>
+            <p>
+              Partagez avec vos proches et vos clients les photos des moments
+              partagés ensemble à travers un album photo personnalisé
+            </p>
+          </div>
+          <div class="service__price">
+            <h4>400€ album A4</h4>
+            <span>30 pages recto/verso</span>
+          </div>
+        </article>
+      </section>
+    </article>
+    <!-- Section Quote -->
+    <article class="quote">
+      <figure>
+        <blockquote>
+          <p class="quote__text">
+            De manière inconsciente, je crois, je guette un regard, une
+            expression, des traits ou une nostalgie capable de résumer ou plus
+            exactement de révéler une vie
+          </p>
+        </blockquote>
+        <figcaption class="quote__author">- Richard Avedon</figcaption>
+      </figure>
+    </article>
+    <!-- Section Contact -->
+    <article id="contact">
+      <div class="container">
+        <section class="form-container">
+          <h2>Une question ? Une demande de devis ?</h2>
+          <p>
+            N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
+          </p>
+          <form action="" method="post">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Envoyer" />
+          </form>
+        </section>
+        <section class="picture right">
+          <img
+            srcset="
+              assets/optimisedimages/camera/vintage-camera_240.webp 240w,
+              assets/optimisedimages/camera/vintage-camera_320.webp 320w,
+              assets/optimisedimages/camera/vintage-camera_419.webp 419w
+            "
+            src="assets/optimisedimages/vintage-camera_419.webp"
+            alt="retro camera"
+            width="419"
+            height="418"
+            loading="lazy"
+          />
+        </section>
+      </div>
+    </article>
+  </body>
 </html>
