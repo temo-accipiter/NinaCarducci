@@ -1,0 +1,1 @@
+const gulp=require("gulp"),cleanCSS=require("gulp-clean-css"),uglify=require("gulp-uglify");function minifyCSS(){return gulp.src("*.css").pipe(cleanCSS()).pipe(gulp.dest("dist/css"))}function minifyJS(){return gulp.src("*.js").pipe(uglify()).pipe(gulp.dest("dist/js"))}gulp.task("default",gulp.series(minifyCSS,minifyJS));

@@ -84,15 +84,28 @@ body {
   font-family: "Spectral";
   font-weight: 800;
   font-style: italic;
-  width: 60%;
+  font-size: 1.1rem;
 }
-#about-me p {
-  width: 80%;
+
+.about-text {
   font-size: 14px;
 }
 
-#about-me :nth-child(2) {
+#about-me p {
+  width: 80%;
+}
+
+span[itemprop="name"] {
   font-size: 1.1rem;
+  font-weight: 900;
+}
+
+span[itemprop="description"],
+span[itemprop="streetAddress"],
+span[itemprop="addressRegion"],
+span[itemprop="postalCode"],
+span[itemprop="telephone"] {
+  font-size: 14px;
 }
 
 #gallery {
