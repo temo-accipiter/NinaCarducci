@@ -5,10 +5,10 @@
     <!-- Pour la gestion de la vue mobile, en utilisant la largeur de l'appareil comme point de départ et en évitant tout zoom initial -->
     <meta
       name="description"
-      content="Photographe professionnelle à Bordeaux, spécialisée dans les moments précieux."
+      content="Photographe professionnelle à Bordeaux, spécialisée dans les événements et photographie mariage."
     />
 
-    <title>Nina Carducci - Photographe</title>
+    <title>Nina Carducci - Photographe à Bordeaux</title>
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/dist/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,6 +20,10 @@
     <!-- Encodage des caractères -->
     <meta charset="UTF-8" />
     <script
+      src="https://kit.fontawesome.com/27d8066a28.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
@@ -28,6 +32,43 @@
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script src="./assets/dist/js/maugallery.js" defer></script>
     <script src="./assets/dist/js/scripts.js" defer></script>
+    <!-- Balises OpenGraph pour Facebook -->
+    <meta
+      property="og:title"
+      content="Nina Carducci - Photographe à Bordeaux"
+    />
+    <meta
+      property="og:description"
+      content="Photographe professionnelle à Bordeaux, spécialisée dans les événements et photographie mariage."
+    />
+    <meta
+      property="og:image"
+      content="assets/optimisedimages/nina-carducci-portraits-photo_600.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://temo-accipiter.github.io/NinaCarducci/"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Balises Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Nina Carducci - Photographe à Bordeaux"
+    />
+    <meta
+      name="twitter:description"
+      content="Photographe professionnelle à Bordeaux, spécialisée dans les événements et photographie mariage."
+    />
+    <meta
+      name="twitter:image"
+      content="assets/optimisedimages/nina-carducci-portraits-photo_600.webp"
+    />
+    <meta
+      name="twitter:url"
+      content="https://temo-accipiter.github.io/NinaCarducci/"
+    />
   </head>
   <body>
     <!-- Header: titre et bar de navigation -->
@@ -158,9 +199,9 @@
             assets/optimisedimages/nina/nina-carducci-portraits-photo_240.webp 240w,
             assets/optimisedimages/nina/nina-carducci-portraits-photo_320.webp 320w,
             assets/optimisedimages/nina/nina-carducci-portraits-photo_440.webp 440w,
-            assets/optimisedimages/nina/nina-carducci-portraits-photo_560.webp 560w
+            assets/optimisedimages/nina/nina-carducci-portraits-photo_600.webp 560w
           "
-          src="assets/optimisedimages/nina-carducci-portraits-photo_560.webp"
+          src="assets/optimisedimages/nina-carducci-portraits-photo_600.webp"
           alt="portraits photo - Nina Carducci"
           width="560"
           height="558"
@@ -174,7 +215,7 @@
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
         </p>
-        <p>
+        <p class="about-text">
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
           photographies pour le savourer avec les personnes qui sont importantes
@@ -184,7 +225,7 @@
           puissiez y puiser de l’amour, du bonheur, de la tendresse et de
           lumière à chaque fois que vous poserez les yeux sur vos photos.
         </p>
-        <p>
+        <p class="about-text">
           En tant que <strong>photographe passionné</strong>, ma mission est de
           vous offrir une expérience de
           <strong>séance photo professionnelle</strong> inoubliable. Vous
@@ -194,6 +235,32 @@
           découvrir mon travail et à me contacter pour réserver votre
           <strong>séance photo</strong> ou discuter de votre projet.
         </p>
+        <!-- microformats -->
+        <div itemscope itemtype="http://schema.org/Photographer">
+          <span itemprop="name">Nina Carducci</span>
+          <div>
+            <span itemprop="description"
+              ><i class="fa-solid fa-camera"></i> Photographe professionnelle à
+              Bordeaux, spécialisée dans les événements et la photographie de
+              mariage, concerts, entreprises, et portraits.</span
+            >
+          </div>
+          <div
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            <span itemprop="streetAddress"
+              ><i class="fa-solid fa-location-dot"></i> 68 avenue
+              Alsace-Lorraine</span
+            >,
+            <span itemprop="addressRegion">Bordeaux</span>
+            <span itemprop="postalCode">33200</span>
+          </div>
+          <span itemprop="telephone"
+            ><i class="fa-solid fa-phone"></i> 05 56 67 78 89</span
+          >
+        </div>
       </section>
     </article>
     <!-- Section Portfolio -->
