@@ -108,9 +108,6 @@ span[itemprop="telephone"] {
   font-size: 14px;
 }
 
-#gallery {
-  /*	min-height: 100vh; */
-}
 .title {
   text-align: center;
   padding-block: 2em;
@@ -121,7 +118,7 @@ span[itemprop="telephone"] {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #beb45a;
+  background-color: #595959;
   border-radius: 0;
 }
 .nav-pills .nav-link {
