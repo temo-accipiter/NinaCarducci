@@ -17,3 +17,10 @@ function minifyJS() {
 
 // Tâche par défaut (exécutée en tapant simplement "gulp" dans le terminal)
 gulp.task("default", gulp.series(minifyCSS, minifyJS));
+
+
+
+
+
+
+
