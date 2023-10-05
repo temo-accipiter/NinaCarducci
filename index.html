@@ -5,11 +5,10 @@
     <!-- Pour la gestion de la vue mobile, en utilisant la largeur de l'appareil comme point de départ et en évitant tout zoom initial -->
     <meta
       name="description"
-      content="Photographe professionnelle à Bordeaux, spécialisée dans les événements et photographie mariage."
+      content="Nina Carducci, photographe professionnelle à Bordeaux, spécialisée dans les événements et photographie mariage,vous propose des services de photographie professionnelle. Explorez la galerie de photos et contactez-moi pour tous vos besoins photographiques."
     />
 
-    <title>Nina Carducci - Photographe à Bordeaux</title>
-    <!--<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />-->
+    <title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -35,7 +34,6 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <!--<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -81,6 +79,44 @@
       name="twitter:url"
       content="https://temo-accipiter.github.io/NinaCarducci/"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "description": "Photographe professionnelle à Bordeaux",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33-5-56-67-78-89",
+        "openingHours": "Lun-Ven 10:00-19:00",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services proposés",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Shooting photo",
+              "price": "350€/demi journée"
+            },
+            {
+              "@type": "Offer",
+              "name": "Retouches",
+              "price": "50€/photo"
+            },
+            {
+              "@type": "Offer",
+              "name": "Album photos",
+              "price": "400€ album A4"
+            }
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
     <!-- Header: titre et bar de navigation -->
@@ -148,7 +184,7 @@
                 assets/optimisedimages/slider/bordeaux-wedding-photography_1920.webp 1920w
               "
               src="assets/optimisedimages/slider/bordeaux-wedding-photography_1920.webp"
-              alt="wedding photography"
+              alt="photographie mariage"
               class="d-block w-100"
               width="1920"
               height="887"
@@ -178,7 +214,7 @@
                 assets/optimisedimages/slider/japan-street-photography_1920.webp 1920w
               "
               src="assets/optimisedimages/slider/japan-street-photography_1920.webp"
-              alt="Man walking on pedestrian crossing - street photography"
+              alt="Un homme traverse un passage piéton - photographie de rue"
               class="d-block w-100"
             />
           </article>
@@ -216,7 +252,7 @@
             assets/optimisedimages/nina/nina-carducci-portraits-photo_600.webp 560w
           "
           src="assets/optimisedimages/nina-carducci-portraits-photo_600.webp"
-          alt="portraits photo - Nina Carducci"
+          alt="Nina Carducci - portrait"
           width="560"
           height="558"
           loading="lazy"
@@ -253,37 +289,6 @@
             <strong>séance photo</strong> ou discuter de votre projet.
           </p>
         </article>
-        <!-- microformats -->
-        <div itemscope itemtype="http://schema.org/Photographer" tabindex="0">
-          <span itemprop="name">Nina Carducci</span>
-          <div>
-            <span itemprop="description"
-              ><i aria-hidden="true" class="fa-solid fa-camera"></i
-              ><span class="sr-only">,description,</span> Photographe
-              professionnelle à Bordeaux, spécialisée dans les événements et la
-              photographie de mariage, concerts, entreprises, et
-              portraits.</span
-            >
-          </div>
-          <div
-            itemprop="address"
-            itemscope
-            itemtype="http://schema.org/PostalAddress"
-          >
-            <span itemprop="streetAddress"
-              ><i aria-hidden="true" class="fa-solid fa-location-dot"></i
-              ><span class="sr-only">adresse de photographe, </span> 68 avenue
-              Alsace-Lorraine,</span
-            >
-            <span itemprop="addressRegion">Bordeaux</span>
-            <span itemprop="postalCode">33200</span>
-          </div>
-          <span itemprop="telephone"
-            ><i aria-hidden="true" class="fa-solid fa-phone"></i>
-            <span class="sr-only">,numero de telephone</span> 05 56 67 78
-            89</span
-          >
-        </div>
       </section>
     </article>
     <!-- Section Portfolio -->
@@ -302,7 +307,7 @@
             "
             sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
             src="assets/optimisedimages/gallery/concerts/live-concert-toronto_575.webp"
-            alt="Music fans raise their hands in the air while live concert"
+            alt="Des fans de musique lèvent leurs mains en l'air pendant un live concert."
             loading="lazy"
             tabindex="0"
           />
@@ -317,7 +322,7 @@
             "
             sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
             src="assets/optimisedimages/gallery/entreprise/portraits-photo-young-man_575.webp"
-            alt="Man wearing a black jacket - portraits photo"
+            alt="Un homme portant une veste noire - portrait"
             loading="lazy"
             tabindex="0"
           />
@@ -332,7 +337,7 @@
             "
             sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
             src="assets/optimisedimages/gallery/entreprise/office-team-shooting-photo_575.webp"
-            alt="shooting photo - office"
+            alt="Bureau - shooting photo"
             loading="lazy"
             tabindex="0"
           />
@@ -347,7 +352,7 @@
             "
             sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
             src="assets/optimisedimages/gallery/mariage/wedding-photography-paris_575.webp"
-            alt="hands - wedding photography"
+            alt="les mains d'un couples - photographie mariage"
             loading="lazy"
             tabindex="0"
           />
@@ -362,7 +367,7 @@
             "
             sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
             src="assets/optimisedimages/gallery/portraits/portraits-photo_575.webp"
-            alt="eyes closed - portraits photo"
+            alt="Un homme les yeux fermés - portrait"
             loading="lazy"
             tabindex="0"
           />
@@ -377,7 +382,7 @@
             "
             sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
             src="assets/optimisedimages/gallery/mariage/wedding-photography_575.webp"
-            alt="wedding photography - couple walks hand in hand"
+            alt="Un couple marche main dans la main - photographie mariage"
             loading="lazy"
             tabindex="0"
           />
@@ -392,7 +397,7 @@
             "
             sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
             src="assets/optimisedimages/gallery/portraits/portraits-photo-young-woman_575.webp"
-            alt="A woman wearing glasses - portraits photo"
+            alt="Une femme portant des lunettes - portrait"
             loading="lazy"
             tabindex="0"
           />
@@ -407,7 +412,7 @@
             "
             sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
             src="assets/optimisedimages/gallery/concerts/live-concert-bordeaux_575.webp"
-            alt="A musician on stage with white and red lights - live concert"
+            alt="Un musicien sur scène avec des lumières blanches et rouges - live concert"
             loading="lazy"
             tabindex="0"
           />
@@ -422,7 +427,7 @@
             "
             sizes="(min-width: 576px) and (max-width: 767px) 50vw, (min-width: 768px) 33.33vw, 100vw"
             src="assets/optimisedimages/gallery/entreprise/office-portraits-photo_575.webp"
-            alt="office - shooting photo"
+            alt="Bureau - shooting photo"
             loading="lazy"
             tabindex="0"
           />
@@ -533,7 +538,7 @@
               assets/optimisedimages/camera/vintage-camera_419.webp 419w
             "
             src="assets/optimisedimages/vintage-camera_419.webp"
-            alt="retro camera"
+            alt="camera retro"
             width="419"
             height="418"
             loading="lazy"
