@@ -6,10 +6,10 @@ import * as glob from "glob"; // module pour la recherche de fichiers
 import path from "path"; // module pour la gestion des chemins de fichiers
 import fs from "fs"; // module pour la gestion des fichiers
 
-const rootDirectory = "assets/images/nina/"; // Dossier où se trouvent les images sources
-const sizes = [400]; // Les tailles de redimensionnement
+const rootDirectory = "assets/images/"; // Dossier où se trouvent les images sources
+const sizes = [300]; // Les tailles de redimensionnement
 const quality = 50; // Niveau de compression WebP
-const outputDirectory = "assets/optimisedimages/nina/"; // Dossier de stockage pour les images optimisées
+const outputDirectory = "assets/optimisedemages/"; // Dossier de stockage pour les images optimisées
 
 (async () => {
   const imageFiles = glob.sync("**/*.{jpg,png}", { cwd: rootDirectory }); // Recherche des images récursivement dans le dossier racine
